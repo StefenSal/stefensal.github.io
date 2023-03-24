@@ -83,7 +83,7 @@
 <link href="/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Jekyll, NexT" />
+  <meta name="keywords" content="LLM,Instruction Tuning," />
 
 
 
@@ -111,14 +111,19 @@
 
 
 
-<meta name="keywords" content="Jekyll, NexT">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Pengjie's Blog">
-<meta property="og:url" content="http://localhost:4000/tags/">
+<meta name="description" content="finetuning language models on a collection of tasks described via instructions substantially boosts zero-shot performance on unseen tasks.">
+<meta name="keywords" content="LLM, Instruction Tuning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Instruction Tuning">
+<meta property="og:url" content="http://localhost:4000/llm/2023/03/20/instruction-tuning/">
 <meta property="og:site_name" content="Pengjie's Blog">
+<meta property="og:description" content="finetuning language models on a collection of tasks described via instructions substantially boosts zero-shot performance on unseen tasks.">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-9ddf840e7450ae5208ff66ea6374e902_1440w.webp">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Pengjie's Blog">
+<meta name="twitter:title" content="Instruction Tuning">
+<meta name="twitter:description" content="finetuning language models on a collection of tasks described via instructions substantially boosts zero-shot performance on unseen tasks.">
+<meta name="twitter:image" content="https://pic3.zhimg.com/80/v2-9ddf840e7450ae5208ff66ea6374e902_1440w.webp">
 
 
 <script type="text/javascript" id="hexo.configurations">
@@ -151,7 +156,7 @@
 
 
 
-  <title>              Tags | Pengjie's Blog      </title>
+  <title>Instruction Tuning | Pengjie's Blog</title>
   
 
 
@@ -277,42 +282,220 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
+
 <div id="posts" class="posts-expand">
-<header class="post-header">
+  
+  
 
-	<h1 class="post-title" itemprop="name headline">
-    
-      Tags
-    
-  </h1>
-
-
-
-</header>
+  
 
   
   
-    <div class="tag-cloud">
-      <div class="tag-cloud-title">
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/llm/2023/03/20/instruction-tuning/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Pengjie">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="assets/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pengjie's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
           
-            4 tags in total
           
-      </div>
-      <div class="tag-cloud-tags">
+            Instruction Tuning
+          
+        </h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2023-03-20T07:33:26+08:00">
+                2023-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/category/#/LLM" itemprop="url" rel="index">
+                    <span itemprop="name">LLM</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
-        
-        
-        
-        
-        
+  
+  
 
 
 
-        <a href="/tag/#/LLM" style="font-size: 12px;color: rgb(204,204,204)">LLM</a> <a href="/tag/#/Instruction%20Tuning" style="font-size: 12px;color: rgb(204,204,204)">Instruction Tuning</a> <a href="/tag/#/immigration" style="font-size: 12px;color: rgb(204,204,204)">immigration</a> <a href="/tag/#/canada" style="font-size: 12px;color: rgb(204,204,204)">canada</a>
-      </div>
+
+
+
+
+
+
+
+
+
+  <p>finetuning language models on a collection of tasks described via instructions substantially boosts zero-shot performance on unseen tasks.</p>
+
+<blockquote>
+  <p>Paper link:  <a href="https://arxiv.org/pdf/2109.01652v1.pdf">Finetuned Language Models Are Zero-Shot Learners</a></p>
+</blockquote>
+
+<p><img src="https://pic3.zhimg.com/80/v2-9ddf840e7450ae5208ff66ea6374e902_1440w.webp" alt="paper" /></p>
+
+<h2 id="instruction-tuning和prompt-tuning的区别">Instruction Tuning和Prompt Tuning的区别：</h2>
+
+<ol>
+  <li>Prompt tuning都是针对一个任务的，比如做一个情感分析任务的prompt tuning，精调完的模型只能用于情感分析任务，而经过Instruction Tuning多任务精调后，可以用于其他任务的zero-shot。</li>
+  <li>Prompt tuning是去激发语言模型的补全能力，比如给出上半句生成下半句、或者做完形填空，都还是在做language model任务。而Instruction Tuning则是激发语言模型的理解能力，通过给出更明显的指令/指示，让模型去理解并做出正确的action。</li>
+  <li>Instruction tuning通过自然语言组成的instruction将各种自然语言任务转换为一种更加统一的形式，同时这也是一种更加贴近日常对话/聊天的形式。这种形式拉近了各种不同自然语言任务之间的距离，使得模型在in-context learning的时候更好地去”定位”，因此zero-shot性能得到提升。</li>
+  <li>多种形式的instructions导致模型在精调阶段的训练模式和用户使用阶段的推理模式保持一致，instruction越多，越能模拟用户实际使用模型时千奇百怪的提问方法。</li>
+</ol>
+
+
+
+      
     </div>
-  
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/tag/#/LLM" rel="tag"># LLM</a>
+          
+            
+            <a href="/tag/#/Instruction%20Tuning" rel="tag"># Instruction Tuning</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/immigration/2023/03/24/canada-immigration/" rel="next" title="Canada Immigration Policy">
+                <i class="fa fa-chevron-left"></i> Canada Immigration Policy
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/tutorial/2017/07/20/next-tutorial/" rel="prev" title="Next Theme Tutorial">
+                Next Theme Tutorial <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
 </div>
 
 
@@ -321,6 +504,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -338,10 +525,30 @@
     <div class="sidebar-inner">
 
       
+        
+        
+        
+
+
+
+
+
+
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/assets/images/avatar.gif"
@@ -412,6 +619,34 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class=nav>
+      <li class="nav-item nav-level-2"> <a class="nav-link" href="#instruction-tuning和prompt-tuning的区别"> <span class="nav-number">1</span> <span class="nav-text">Instruction Tuning和Prompt Tuning的区别：</span> </a> </li>
+    </ol>
+  </div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
