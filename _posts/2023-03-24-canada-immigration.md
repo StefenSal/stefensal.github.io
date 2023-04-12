@@ -13,6 +13,9 @@ This blog is writen for recording some details for Canada immigration policies, 
 Collect all the immigration informations, including official source from [Canada Immigration Website](https://immigrationnewscanada.ca) and some other unofficial sources(such as social medias).
 ## Official source
 ### Express Entry
+CRS tool: A tool to assess your score of EE system
+[Link](https://ircc.canada.ca/english/immigrate/skilled/crs-tool.asp)
+
 Express Entry Data for recent years: 
 [Express Entry Latest Draw 2023 And Rounds Of Invitations](https://immigrationnewscanada.ca/express-entry-new-rounds-of-invitations-and-draw-results/)
 
